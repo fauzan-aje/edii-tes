@@ -18,7 +18,6 @@ public class EntriDataService {
     EntriDataRepo entriDataRepo;
 
     public EntriData save(EntriData entriData, Pendidikan pendidikan, Pelatihan pelatihan, PengalamanKerja pengalamanKerja){
-        
         return entriDataRepo.save(entriData);
     }
 
