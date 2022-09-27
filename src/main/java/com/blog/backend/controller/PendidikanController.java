@@ -36,8 +36,8 @@ public class PendidikanController {
     }
 
     @PutMapping
-    public Pendidikan update(@RequestBody Pendidikan produk){
-        return pendidikanService.save(produk); 
+    public Pendidikan update(@RequestBody Pendidikan pendidikan){
+        return pendidikanService.save(pendidikan); 
     }
 
     @DeleteMapping("/{id}")
