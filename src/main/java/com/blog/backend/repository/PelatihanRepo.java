@@ -9,5 +9,5 @@ import com.blog.backend.model.Pelatihan;
 
 @Repository
 public interface PelatihanRepo extends JpaRepository<Pelatihan, Long> {
-    List<Pelatihan> findByNamaContains(String nama);
+    List<Pelatihan> findByNamaKursusContains(String nama);
 }

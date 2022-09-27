@@ -9,5 +9,5 @@ import com.blog.backend.model.Pendidikan;
 
 @Repository
 public interface PendidikanRepo extends JpaRepository<Pendidikan, Long> {
-    List<Pendidikan> findByNamaContains(String nama);
+    List<Pendidikan> findByNamaInstitusiContains(String nama);
 }

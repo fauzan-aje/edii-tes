@@ -35,6 +35,6 @@ public class PelatihanService {
     }
 
     public List<Pelatihan> findByNama(String name){
-        return pelatihanRepo.findByNamaContains(name);
+        return pelatihanRepo.findByNamaKursusContains(name);
     }
 }

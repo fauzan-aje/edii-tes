@@ -36,6 +36,6 @@ public class PendidikanService {
     }
 
     public List<Pendidikan> findByNama(String name){
-        return pendidikanRepo.findByNamaContains(name);
+        return pendidikanRepo.findByNamaInstitusiContains(name);
     }
 }

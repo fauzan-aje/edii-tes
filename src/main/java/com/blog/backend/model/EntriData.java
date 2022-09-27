@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 
 import lombok.Data;
@@ -50,18 +51,6 @@ public class EntriData implements Serializable {
 
     private int noHP;
     private int hpOrangterdekat;
-
-    @JoinColumn(name = "pendidikanId", referencedColumnName = "id")
-    @ManyToOne
-    private Pendidikan pendidikan;
-
-    @JoinColumn(name = "pelatihanId", referencedColumnName = "id")
-    @ManyToOne
-    private Pelatihan pelatihan;
-
-    @JoinColumn(name = "pengalamanKerjaId", referencedColumnName = "id")
-    @ManyToOne
-    private PengalamanKerja pengalamanKerja;
 
     private String skill;
 
